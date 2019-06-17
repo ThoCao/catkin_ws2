@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<launch>
+  
+  <machine name="thocao_node_2"
+         address="192.168.0.5"
+         user="ubuntu"
+         password="ubuntu2019"
+         timeout="30"
+         env-loader="/home/ubuntu/catkin_ws/devel/remote_env.sh"
+         />
+
+  <node machine="thocao_node_2" name="bus_sub_video_cpu" pkg="bus_sub_video" type="yolo_pub_video1" args="0"/>
+
+   <node name="bus_display_video" pkg="bus_sub_video" type="yolo_sub_video"  />
+
+</launch>

@@ -1,0 +1,8 @@
+prefix=/home/thocao/catkin_ws/install
+
+Name: bus_sub_video
+Description: Description of bus_sub_video
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/thocao/catkin_ws/install/lib 
+Requires: 
